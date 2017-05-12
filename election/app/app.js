@@ -65,7 +65,8 @@ mainApp.run(function ($http, $rootScope, $window, $location, jwtHelper, CacheFac
   var appCache = CacheFactory('appCache', {
     capacity : 100,
     deleteOnExpire: 'aggressive',
-    storageMode: 'localStorage'
+    storageMode: 'localStorage',
+    maxAge: 24 * 60 * 60 * 1000
   });
    $rootScope.lastPage = '/';
    if (localStorage.getItem('token')) {
