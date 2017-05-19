@@ -49,7 +49,7 @@ mainApp.config(function($routeProvider, $authProvider) {
     });
 
      $authProvider.config({
-		 	apiUrl: 'http://localhost:8000',
+		 	apiUrl: window.location.origin,
             signOutUrl: '/api/token-logout/',
             emailSignInPath: '/api/token-auth/',
             tokenValidationPath: '/api/token-auth/',
