@@ -59,7 +59,7 @@ STATICFILES_FINDERS = [
 ]
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'election\\app')
+    os.path.join(BASE_DIR, 'election/app')
 ]
 
 BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'components')
